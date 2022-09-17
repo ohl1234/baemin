@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한민국 1등 배달앱, 배달의민족</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="shortcut icon" href="https://www.baemin.com/_next/static/images/favicon-48x48.png" type="image/x-icon">
+</head>
+<body>
+    <!-- <div class="loading">
+        <figure class="loading-thumb">
+            <img src="./asset/images/loading-thumb.png" alt="로딩 이미지" class="loading-img">
+        </figure>
+        <p class="loading-txt">우리가 어떤 민족입니까</p>
+    </div> -->
+    <header class="header">
+        <div class="logo-area">
+            <h1 class="logo">
+                <a href="#" class="link-logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 1417 404" style="enable-background:new 0 0 1417 404;" xml:space="preserve">
+                        <g transform="translate(0.000000,404.000000) scale(0.100000,-0.100000)">
+                            <g>
+                                <path d="M2540,3445c0-3,0-636,0-1407V635h206h206l-1,723l-2,722h151h150v-725V630h190h190v1410v1410h-190h-190v-465v-465h-150
+                                    h-150v465v465h-205C2632,3450,2540,3448,2540,3445z"/>
+                                <path d="M1007,3173c-4-3-7-447-7-985v-978h630h630v985v985l-202-2l-203-3v-253v-252h-227h-228v255v255h-193
+                                    C1100,3180,1010,3177,1007,3173z M1853,1923l-2-298l-226-3l-225-2v300v300h228h227L1853,1923z"/>
+                            </g>
+                            <g>
+                                <path d="M7890,1903l1-618l-40-17c-56-23-264-82-404-113c-219-48-376-66-634-72l-243-6V917V757l178,6c499,19,865,107,1090,263
+                                    l62,43V870V670h175h175v925v925h-180h-180V1903z"/>
+                                <path d="M6870,2394c-101-36-175-114-205-218c-22-73-21-452,1-525c19-65,87-141,159-179l50-27h255c253,0,255,0,310,26
+                                    c70,33,116,79,149,149c25,53,26,63,29,278c3,202,2,229-17,291c-25,82-80,150-155,189c-51,27-52,27-291,29
+                                    C6956,2409,6907,2407,6870,2394z M7248,2146c15-8,38-26,52-41c24-25,25-33,28-164c4-159-6-198-60-231c-27-16-50-20-126-20
+                                    c-100,0-129,9-172,55c-24,25-25,33-28,168s-2,144,20,177c35,53,78,70,176,70C7190,2160,7231,2155,7248,2146z"/>
+                            </g>
+                            <g>
+                                <path d="M5700,2675v-765h210h210v260v260h150h150v210v210h-150h-150v295v295h-210h-210V2675z"/>
+                                <path d="M3932,2633l3-638l728-3l727-2v175v175h-520h-520v270v270h485h485v195v195h-695h-695L3932,2633z"/>
+                                <path d="M4120,1665v-135h765h765v-75v-75h-765h-765l2-377l3-378l993-3l992-2v155v155h-785h-785v75v75h785h785v360v360h-995h-995
+                                    V1665z"/>
+                            </g>
+                            <g>
+                                <path d="M11164,3357c-2-7-3-85-2-172l3-160l338-3c185-1,337-6,337-11c0-17-59-88-121-145c-113-105-328-229-486-280l-53-18v-143
+                                    v-144l88,24c364,98,722,283,896,463l49,51l88-84c229-217,559-367,887-401l63-7l-3,128l-3,128l-99,33c-215,72-366,164-496,301
+                                    c-44,46-80,89-80,94s138,9,345,9h345v175v175h-1045C11370,3370,11168,3368,11164,3357z"/>
+                                <path d="M11990,2305v-145h-490h-490v-190v-190h1205h1205v190v190h-490h-491l2,143l1,142l-226,3l-226,2V2305z"/>
+                                <path d="M11150,1400v-190l858-2l857-3l-3-70c-5-138-55-341-108-447c-13-26-24-52-24-58s70-10,204-10h203l33,73
+                                    c18,39,46,124,63,187c29,112,30,122,36,413l6,297h-1062h-1063V1400z"/>
+                            </g>
+                            <g>
+                                <path d="M10340,2533v-908l212,2l213,2v903v903l-212,3l-213,2V2533z"/>
+                                <path d="M8570,2575v-685h705h705v685v685h-705h-705V2575z M9573,2573l-2-298l-301-3l-300-2v300v300h303h302L9573,2573z"/>
+                                <path d="M8815,1558c-3-7-4-220-3-473l3-460l993-3l992-2v200v200h-785h-785v275v275h-205C8870,1570,8818,1567,8815,1558z"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="blind">배달의민족</span>
+                </a>
+            </h1>
+        </div>
+        <div class="download-area">
+            <a href="#" aria-label="app download">
+                <img src="./asset/images/app-down.png" alt="앱 다운로드">
+                <span class="blind">앱 다운로드</span>
+            </a>
+        </div>
+    </header>
+    <main class="container">
+        <section class="sc-visual">
+            <div class="txt-area">
+                <h2 class="sc-title">
+                    <span class="tit-msg">배</span>
+                    <span class="tit-msg">달</span>
+                    <span class="tit-msg">의</span>
+                    <span class="tit-msg">민</span>
+                    <span class="tit-msg">족</span>
+                </h2>
+                <div class="line gradient-line6 end">
+                    <div class="guage"></div>
+                </div>
+                <p class="visual-desc">
+                    <span class="desc-txt1">좋은 음식을</span>
+                    <span class="desc-txt2">먹고 싶은 곳에서</span>
+                </p>
+                <div class="line gradient-line1 start">
+                    <div class="guage"></div>
+                </div>
+                <strong class="gradient-txt2">마음에도</strong>
+                <div class="line gradient-line2 end">
+                    <div class="guage"></div>
+                </div>
+                <strong class="gradient-txt3">당 충전이</strong>
+                <div class="line gradient-line3 start">
+                    <div class="guage"></div>
+                </div>
+                <strong class="gradient-txt4">필요할때</strong>
+                <div class="line gradient-line4 end">
+                    <div class="guage"></div>
+                </div>
+            </div>
+            <figure class="thumb-area"></figure>
+        </section>
+        <section class="sc-you">
+            <div class="group-flex1">
+                <h2 class="sc-title">우리가 <span class="txt-wrap"><span class="gradient-txt1">어떤 민족</span></span>입니까</h2>
+                <figure class="thumb-box"></figure>
+            </div>
+            <div class="group-flex2">
+                <div class="line gradient-line2 end">
+                    <div class="guage"></div>
+                </div>
+                <p class="you-desc desc1">서비스와 혜택을 <span class="gradient-txt1">한눈에</span></p>
+                <div class="line gradient-line1 start">
+                    <div class="guage"></div>
+                </div>
+                <p class="you-desc desc2">생생하게 보고사는 <span class="gradient-txt1">배민라이브</span></p>
+                <div class="line gradient-line3 end">
+                    <div class="guage"></div>
+                </div>
+                <p class="you-desc desc3">따뜻함을 주고받는 <span class="gradient-txt1">배민 선물</span></p>
+                <div class="line gradient-line5 start">
+                    <div class="guage"></div>
+                </div>
+                <p class="you-desc desc4">주문하면 <span class="gradient-txt1">바로와요</span></p>
+                <div class="line gradient-line4 end">
+                    <div class="guage"></div>
+                </div>
+            </div>
+        </section>
+        <section class="sc-app">
+            <h2 class="blind">앱서비스 화면소개</h2>
+            <ul class="device-list">
+                <li class="device-item item1">
+                    <div class="mockup">
+                        <img src="./asset/images/app-device.png" alt="앱 디바이스">
+                    </div>
+                    <div class="app-display">
+                        <img src="./asset/images/app1.png" alt="앱 서비스" data-parallex>
+                    </div>
+                </li>
+                <li class="device-item item2">
+                    <div class="mockup">
+                        <img src="./asset/images/app-device.png" alt="앱 디바이스">
+                    </div>
+                    <div class="app-display">
+                        <img src="./asset/images/app2.png" alt="B마트" data-parallex>
+                    </div>
+                </li>
+                <li class="device-item item3">
+                    <div class="mockup">
+                        <img src="./asset/images/app-device.png" alt="앱 디바이스">
+                    </div>
+                    <div class="app-display">
+                        <img src="./asset/images/app3.png" alt="배민선물" data-parallex>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="sc-paragraph">
+            <h2 class="blind">광고 카피</h2>
+            <div class="paragraph-wrap1">
+                <div class="line-wrap top">
+                    <div class="vt-line"></div>
+                </div>
+                <p class="paragraph">
+                    <span class="gradient-txt1">치킨</span> 시킬까 <span class="gradient-txt1">피자</span> 시킬까?
+                    <br>
+                    그래도 이사했는데
+                    <br>
+                    짜장면이 좋겠지?
+                    <br>
+                    후식으로 커피랑 케이크도
+                    <br>
+                    시켜먹자!
+                </p>
+                <div class="line-wrap bottom">
+                    <div class="vt-line"></div>
+                </div>
+            </div>
+            <div class="paragraph-wrap2">
+                <div class="line-wrap top">
+                    <div class="vt-line"></div>
+                </div>
+                <p class="paragraph">
+                    넌
+                    <br> 
+                    <span class="gradient-txt1">먹을 때</span>가
+                    <br>
+                    제일 예뻐
+                <div class="line-wrap bottom">
+                    <div class="vt-line"></div>
+                </div>
+            </div>
+        </section>
+        <section class="sc-feature">
+            <h2 class="blind">배달의 민족 기능소개</h2>
+            <div class="group-mind feature-wrap">
+                <div class="card-box">
+                    <div class="feature-card insight">
+                        <i class="ic-logo">
+                            <img src="./asset/images/loading-thumb.png" alt="바로 그거 배민에 다 있다">
+                        </i>
+                        <div class="txt-box">
+                            <h3 class="feature-tit gradient-txt1">바로 그거! 배민에 다~ 있다</h3>
+                            <p class="feature-txt">
+                                3천만 이상이 선택한 배달의 민족,
+                                <br>
+                                업계 최다 배달가능 업소 보유 중!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-card attention">
+                        <i class="ic-logo">
+                            <img src="./asset/images/feature2.png" alt="줄 서서 먹던 맛집도 우리집으로">
+                        </i>
+                        <div class="txt-box">
+                            <h3 class="feature-tit gradient-txt2">줄 서서 먹던 맛집도 우리집으로</h3>
+                            <p class="feature-txt">
+                                배달이 안되던 동네 맛집까지~
+                                <br>
+                                배민 라이더스가 직접 배달해드립니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-box">
+                    <div class="bar-tit">
+                        <div class="tit-shape">
+                            <img src="./asset/images/bar-img1.png" alt="배민 배달 아이콘">
+                        </div>
+                    </div>
+                    <div class="bar-center">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-heart feature-wrap">
+                <div class="card-box">
+                    <div class="feature-card awareness">
+                        <i class="ic-logo">
+                            <img src="./asset/images/feature3.png" alt="배민선물하기">
+                        </i>
+                        <div class="txt-box">
+                            <h3 class="feature-tit gradient-txt3">너에게 밥을보낸다 배민선물하기</h3>
+                            <p class="feature-txt">
+                                지금 밥 한끼 보내주고 싶은 분께
+                                <br>
+                                배민 상품권을 선물하세요
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-card devotion">
+                        <i class="ic-logo">
+                            <img src="./asset/images/feature4.png" alt="배민쇼핑라이브">
+                        </i>
+                        <div class="txt-box">
+                            <h3 class="feature-tit gradient-txt5">배민 쇼핑라이브는 지금 방송 중!</h3>
+                            <p class="feature-txt">
+                                궁금한 맛은 직접 물어보고, 구경하는 재미
+                                <br>
+                                이제 배민에서 생생하게 경험하세요!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-box">
+                    <div class="bar-tit">
+                        <div class="tit-shape">
+                            <img src="./asset/images/bar-img2.png" alt="배민 식재료 아이콘">
+                        </div>
+                    </div>
+                    <div class="bar-center">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-body feature-wrap">
+                <div class="card-box">
+                    <div class="feature-card nutrition">
+                        <i class="ic-logo">
+                            <img src="./asset/images/feature5.png" alt="B마트">
+                        </i>
+                        <div class="txt-box">
+                            <h3 class="feature-tit gradient-txt4">주문하면 바로와요! B마트</h3>
+                            <p class="feature-txt">
+                                마트까지 가지 않아도, 기다리지 않아도
+                                <br>
+                                주문하신 상품을 바로 배달해드립니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-card fitness">
+                        <i class="ic-logo">
+                            <img src="./asset/images/feature6.png" alt="배민 결제">
+                        </i>
+                        <div class="txt-box">
+                            <h3 class="feature-tit gradient-txt6">어떤 결제방법이든 10초면 끗!</h3>
+                            <p class="feature-txt">
+                                배민페이, 네이버페이 등은 물론
+                                <br>
+                                각종 신용카드까지 결제 가능!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-box">
+                    <div class="bar-tit">
+                        <div class="tit-shape">
+                            <img src="./asset/images/bar-img3.png" alt="배민 피켓 아이콘">
+                        </div>
+                    </div>
+                    <div class="bar-center">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sc-together">
+            <div class="group-flex3">
+                <h2 class="sc-title">It's all<br>coming<br><span class="gradient-txt1">together</span>.</h2>
+            </div>
+            <!-- <div class="group-flex4">
+                <div class="line gradient-line2 end">
+                    <div class="guage"></div>
+                </div>
+                <p class="together-desc desc1">We're breaking the <span class="gradient-txt1">mold</span>.</p>
+                <div class="line gradient-line1 start">
+                    <div class="guage"></div>
+                </div>
+                <p class="together-desc desc2">We're changing the <span class="gradient-txt1">game</span>.</p>
+                <div class="line gradient-line3 end">
+                    <div class="guage"></div>
+                </div>
+                <p class="together-desc desc3">You're never the <span class="gradient-txt1">target</span>.</p>
+                <div class="line gradient-line5 start">
+                    <div class="guage"></div>
+                </div>
+                <p class="together-desc desc4">At Stryds you're the <span class="gradient-txt1">aim</span></p>
+                <div class="line gradient-line4 end">
+                    <div class="guage"></div>
+                </div>
+            </div> -->
+        </section>
+        <section class="sc-story">
+            <h2 class="sc-title">Lost &amp; 
+                <span class="gradient-txt1">Founder</span>
+                <span class="tit-line"></span>
+            </h2>
+            <a href="#" class="link-story">
+                <img src="./asset/images/person.jpg" alt="story Link">
+            </a>
+        </section>
+        <section class="sc-send">
+            <div class="send-wrap">
+                <div class="txt-area">
+                    <em>Fall 2022</em>
+                    <h2 class="sc-title">
+                        You're in
+                        <br>
+                        for the <span class="gradient-txt1">Stryds</span>
+                        <br>
+                        of your life.
+                    </h2>
+                </div>
+                <div class="send-area">
+                    <form action="#" method="post" class="send-form">
+                        <fieldset>
+                            <legend class="blind">email send</legend>
+                            <div class="input-box">
+                                <input type="email" class="input-txt" placeholder="Email">
+                                <button type="submit" class="btn-send"><span class="blind">send</span></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <a href="#" class="link-game">I'm <span class="gradient-txt1">game</span>.</a>
+                </div>
+            </div>
+            <div class="send-bg-wrap">
+                <div class="send-bg">
+                    <div class="bg-column1">
+                        <div class="bg-wrap">
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb1.png" alt="card-bg">
+                            </i>
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb2.png" alt="card-bg">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="bg-column2">
+                        <div class="bg-wrap">
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb3.png" alt="card-bg">
+                            </i>
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb4.png" alt="card-bg">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="bg-column3">
+                        <div class="bg-wrap">
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb2.png" alt="card-bg">
+                            </i>
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb1.png" alt="card-bg">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="bg-column4">
+                        <div class="bg-wrap">
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb3.png" alt="card-bg">
+                            </i>
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb4.png" alt="card-bg">
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="send-bg">
+                    <div class="bg-column1">
+                        <div class="bg-wrap">
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb1.png" alt="card-bg">
+                            </i>
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb2.png" alt="card-bg">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="bg-column2">
+                        <div class="bg-wrap">
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb3.png" alt="card-bg">
+                            </i>
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb4.png" alt="card-bg">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="bg-column3">
+                        <div class="bg-wrap">
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb2.png" alt="card-bg">
+                            </i>
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb1.png" alt="card-bg">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="bg-column4">
+                        <div class="bg-wrap">
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb3.png" alt="card-bg">
+                            </i>
+                            <i class="ic-img">
+                                <img src="./asset/images/card-thumb4.png" alt="card-bg">
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./asset/js/custom.js"></script>
+</body>
+</html>

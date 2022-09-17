@@ -1,0 +1,80 @@
+@font-face {
+font-family: 'HelveticaNeueLTPro';
+src: url(../fonts/HelveticaNeueLTPro-Md.eot);
+src: url(../fonts/HelveticaNeueLTPro-Md.eot?#iefix) format('embedded-opentype'),
+     url(../fonts/HelveticaNeueLTPro-Md.otf) format('otf'),
+     url(../fonts/HelveticaNeueLTPro-Md.svg#HelveticaNeueLTPro-Md) format('svg'),
+     url(../fonts/HelveticaNeueLTPro-Md.ttf) format('truetype'),
+     url(../fonts/HelveticaNeueLTPro-Md.woff) format('woff'),
+     url(../fonts/HelveticaNeueLTPro-Md.woff2) format('woff2');
+
+     font-weight: 500;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'HelveticaNeueLTPro';
+     src: url(../fonts/HelveticaNeueLTPro-Bd.eot);
+     src: url(../fonts/HelveticaNeueLTPro-Bd.eot?#iefix) format('embedded-opentype'),
+          url(../fonts/HelveticaNeueLTPro-Bd.otf) format('otf'),
+          url(../fonts/HelveticaNeueLTPro-Bd.svg#HelveticaNeueLTPro-Bd) format('svg'),
+          url(../fonts/HelveticaNeueLTPro-Bd.ttf) format('truetype'),
+          url(../fonts/HelveticaNeueLTPro-Bd.woff) format('woff'),
+          url(../fonts/HelveticaNeueLTPro-Bd.woff2) format('woff2');
+     
+     font-weight: 700;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'Noto Sans KR';
+     src: url(../fonts/notoR.eot);
+     src: url(../fonts/notoR.eot?#iefix) format('embedded-opentype'),
+          url(../fonts/notoR.otf) format('otf'),
+          url(../fonts/notoR.svg#notoR) format('svg'),
+          url(../fonts/notoR.ttf) format('truetype'),
+          url(../fonts/notoR.woff) format('woff'),
+          url(../fonts/notoR.woff2) format('woff2');
+
+     font-weight: 400;
+     font-style: normal;
+   }
+   @font-face {
+   font-family: 'Noto Sans KR';
+   src: url(../fonts/notoM.eot);
+   src: url(../fonts/notoM.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/notoM.otf) format('otf'),
+         url(../fonts/notoM.svg#notoM) format('svg'),
+         url(../fonts/notoM.ttf) format('truetype'),
+         url(../fonts/notoM.woff) format('woff'),
+         url(../fonts/notoM.woff2) format('woff2');
+
+     font-weight: 500;
+     font-style: normal;
+   }
+   @font-face {
+     font-family: 'Noto Sans KR';
+     src: url(../fonts/notoB.eot);
+     src: url(../fonts/notoB.eot?#iefix) format('embedded-opentype'),
+          url(../fonts/notoB.otf) format('otf'),
+          url(../fonts/notoB.svg#notoB) format('svg'),
+          url(../fonts/notoB.ttf) format('truetype'),
+          url(../fonts/notoB.woff) format('woff'),
+          url(../fonts/notoB.woff2) format('woff2');
+
+     font-weight: 700;
+     font-style: normal;
+   }
+
+@font-face {
+     font-family: 'BM HANNA Pro';
+     src: url(../fonts/BMHANNAPro.eot);
+     src: url(../fonts/BMHANNAPro.eot?#iefix) format('embedded-opentype'),
+          url(../fonts/BMHANNAPro.woff2) format('woff2'),
+          url(../fonts/BMHANNAPro.woff) format('woff'),
+          url(../fonts/BMHANNAPro.ttf) format('truetype'),
+          url(../fonts/BMHANNAPro.svg#BMHANNAPro) format('svg');
+
+     font-weight: normal;
+     font-style: normal;
+   }

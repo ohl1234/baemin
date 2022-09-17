@@ -1,0 +1,63 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+    margin: -1px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-white;
+    .loading-img {
+        height: 20vw;
+    }
+    .loading-txt {
+        color: $color-dark;
+        font-size: 7vw;
+
+    }
+}
+
+.gradient-txt1 {
+    @include gradi-Blue1;
+    @include clip-Text;
+}
+.gradient-txt2 {
+    @include gradi-Blue2;
+    @include clip-Text;
+}
+.gradient-txt3 {
+    @include gradi-Pink;
+    @include clip-Text;
+}
+.gradient-txt4 {
+    @include gradi-Yellow;
+    @include clip-Text;
+}
+.gradient-txt5 {
+    @include gradi-Purple;
+    @include clip-Text;
+}
+.gradient-txt6 {
+    @include gradi-Green;
+    @include clip-Text;
+}
+
+@keyframes rolling {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
