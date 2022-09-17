@@ -264,43 +264,42 @@ input, select, button, fieldset {
 }
 
 .gradient-txt1 {
-  background-image: linear-gradient(90deg, #0082f3, #0ef0ea);
-  filter: saturate(150%);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .gradient-txt2 {
-  background-image: linear-gradient(90deg, #05cafe, #2f32cf);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .gradient-txt3 {
-  background-image: linear-gradient(90deg, #e400ff, #f50d5b);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .gradient-txt4 {
-  background-image: linear-gradient(90deg, #e4f12e, #56db63);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .gradient-txt5 {
-  background-image: linear-gradient(90deg, #bd039f, #9460e4);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .gradient-txt6 {
-  background-image: linear-gradient(90deg, #04fccb, #40fd8f);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -356,28 +355,27 @@ input, select, button, fieldset {
 }
 
 .gradient-line1 > * {
-  background-image: linear-gradient(90deg, #0082f3, #0ef0ea);
-  filter: saturate(150%);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
 }
 
 .gradient-line2 > * {
-  background-image: linear-gradient(90deg, #05cafe, #2f32cf);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
 }
 
 .gradient-line3 > * {
-  background-image: linear-gradient(90deg, #e400ff, #f50d5b);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
 }
 
 .gradient-line4 > * {
-  background-image: linear-gradient(90deg, #e4f12e, #56db63);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
 }
 
 .gradient-line5 > * {
-  background-image: linear-gradient(90deg, #bd039f, #9460e4);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
 }
 
 .gradient-line6 > * {
-  background-image: linear-gradient(90deg, #04fccb, #40fd8f);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
 }
 
 .header {
@@ -390,8 +388,10 @@ input, select, button, fieldset {
   align-items: center;
   width: 100vw;
   padding: 2.1vh;
+  opacity: 1;
   -webkit-backdrop-filter: blur(13px);
   backdrop-filter: blur(13px);
+  transition: opacity 0.5s;
 }
 .header .link-logo {
   display: block;
@@ -415,6 +415,88 @@ input, select, button, fieldset {
     padding: 13px;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 13.7vh max((100vw - 1024px) / 2, 50px);
+  padding-bottom: 13.7vh;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.footer .group-flex5 {
+  display: flex;
+}
+.footer .family-area {
+  width: 55%;
+}
+.footer .family-area .family-site {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-right: 15vw;
+}
+.footer .family-area .link-site {
+  display: block;
+  margin-right: 20px;
+}
+.footer .family-area .link-site:nth-child(n+3) {
+  margin-top: 20px;
+}
+.footer .family-area .link-site img {
+  height: 24px;
+}
+.footer .family-area .sns {
+  display: flex;
+  align-items: center;
+}
+.footer .family-area .link-sns {
+  display: block;
+  width: 40px;
+}
+.footer .family-area .link-sns + a {
+  margin-left: 40px;
+}
+.footer .download-area {
+  width: 45%;
+  padding-right: 10vw;
+}
+.footer .download-area .footer-tit {
+  width: 193px;
+}
+.footer .download-area .link-download {
+  display: block;
+  width: 140px;
+  margin-top: 35px;
+}
+.footer .download-area .link-download img {
+  width: 100%;
+}
+.footer .addr-area {
+  line-height: 1.5;
+}
+.footer .addr-area p {
+  margin-top: 25px;
+}
+.footer .addr-line1 span,
+.footer .addr-line3 span {
+  display: block;
+}
+.footer .addr-line2 span:last-of-type {
+  display: block;
+}
+.footer .link-info,
+.footer .link-mail {
+  text-decoration: underline;
+}
+.footer .link-info {
+  display: inline-block;
+  margin-left: 12px;
+}
+
 .sc-visual {
   position: relative;
   overflow: hidden;
@@ -433,14 +515,12 @@ input, select, button, fieldset {
 }
 .sc-visual .txt-area .sc-title .tit-msg {
   display: inline-block;
-  font-size: 34.2vh;
-  line-height: 31.1vh;
-  font-weight: 500;
-  letter-spacing: -0.7vh;
+  font-size: 21vh;
+  letter-spacing: -10px;
 }
 .sc-visual .txt-area .sc-title .tit-msg:nth-of-type(3) {
   vertical-align: -12px;
-  font-size: 22vh;
+  font-size: 14vh;
 }
 .sc-visual .txt-area .visual-desc {
   font-family: "Noto Sans KR", sans-serif;
@@ -465,8 +545,8 @@ input, select, button, fieldset {
   display: inline-block;
   font-size: 30vh;
   line-height: 40vh;
-  font-weight: 500;
   letter-spacing: -0.7vh;
+  color: #ffffff;
 }
 .sc-visual .txt-area strong.gradient-txt3 {
   align-self: flex-end;
@@ -475,7 +555,7 @@ input, select, button, fieldset {
   position: absolute;
   top: -25%;
   right: 0;
-  width: 350px;
+  width: 22vw;
   height: 1500px;
   background-image: url(../images/main.png);
   background-repeat: no-repeat;
@@ -588,8 +668,6 @@ input, select, button, fieldset {
   text-align: center;
   z-index: 3;
   font-size: 10vw;
-  font-weight: 500;
-  letter-spacing: -1.7vh;
   white-space: nowrap;
 }
 .sc-you .group-flex1 .sc-title .txt-wrap {
@@ -1004,8 +1082,7 @@ input, select, button, fieldset {
   width: 97%;
   height: 5%;
   border-radius: 50px;
-  background-image: linear-gradient(90deg, #0082f3, #0ef0ea);
-  filter: saturate(150%);
+  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
 }
 
 @media (max-width: 991px) {
@@ -1286,10 +1363,15 @@ input, select, button, fieldset {
   width: 100%;
   padding: 0 5.5vh 7vh 5.5vh;
   color: #232323;
-  font-size: 11vh;
-  line-height: 9vh;
-  font-weight: 500;
+  font-size: 4vw;
   letter-spacing: -0.13vh;
+}
+.sc-story .sc-title .link-logo {
+  display: inline-block;
+  vertical-align: -5px;
+}
+.sc-story .sc-title svg {
+  width: 12vw;
 }
 .sc-story .sc-title .tit-line {
   display: block;
@@ -1305,12 +1387,10 @@ input, select, button, fieldset {
   width: 100%;
   height: 85vh;
   background-color: #fff;
-  opacity: 0.89;
 }
 .sc-story .link-story img {
   max-width: none;
   height: 100%;
-  filter: contrast(121%) grayscale(100%);
 }
 
 @media (max-width: 991px) {
@@ -1374,9 +1454,8 @@ input, select, button, fieldset {
   margin-bottom: 3.4vh;
 }
 .sc-send .txt-area .sc-title {
-  font-size: 11vh;
-  line-height: 10vh;
-  font-weight: 500;
+  font-size: 4vw;
+  line-height: 1.3;
   letter-spacing: -0.13vh;
   color: rgba(255, 255, 255, 0.89);
 }
