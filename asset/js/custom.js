@@ -63,7 +63,6 @@ $(function(){
                     trigger:".sc-visual",
                     start:"top top",
                     end:"bottom top",
-                    scrub:0,
                     ease:'none'
                 },
                 yPercent:-70,
@@ -136,8 +135,8 @@ $(function(){
             gsap.set('.sc-introduce .sc-title',{yPercent:150})
             gsap.to('.sc-introduce .sc-title',{
                 scrollTrigger:{
-                    trigger:".sc-introduce .thumb-box",
-                    start:'top 60%',
+                    trigger:".sc-introduce",
+                    start:'top bottom',
                     end:'bottom top',
                     scrub:1
                 },
@@ -224,7 +223,7 @@ $(function(){
                         trigger:el,
                         start: 'top 100%',
                         end: 'bottom top',
-                        scrub:0,
+                        scrub:1,
                         ease:'none'
                     },
                     width:'97%'

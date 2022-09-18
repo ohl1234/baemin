@@ -668,11 +668,6 @@ input, select, button, fieldset {
 .sc-introduce .group-flex1 .sc-title .txt-wrap {
   display: block;
 }
-.sc-introduce .group-flex1 .thumb-box {
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-}
 .sc-introduce .group-flex2 {
   display: flex;
   flex-direction: column;
@@ -720,6 +715,8 @@ input, select, button, fieldset {
   }
   .sc-introduce .group-flex1 {
     height: 90vh;
+    background-position: right bottom;
+    background-attachment: scroll;
   }
   .sc-introduce .group-flex1 .sc-title {
     font-size: 110px;
@@ -736,9 +733,6 @@ input, select, button, fieldset {
     font-size: 80px;
     line-height: 70px;
     letter-spacing: -1px;
-  }
-  .sc-introduce .group-flex1 .thumb-box {
-    width: 100%;
   }
   .sc-introduce .group-flex2 {
     padding: 34px 21px;
@@ -883,7 +877,7 @@ input, select, button, fieldset {
   .sc-app .app-display {
     width: auto;
     height: auto;
-    border-radius: 5px;
+    border-radius: 20px;
   }
 }
 .sc-paragraph {
@@ -1189,7 +1183,7 @@ input, select, button, fieldset {
   }
   .sc-feature .bar-box {
     position: absolute;
-    left: 2%;
+    left: 0;
     right: 0;
     bottom: 50%;
     padding-right: 8.9vh;
