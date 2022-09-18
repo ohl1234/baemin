@@ -1,10 +1,11 @@
 $(function(){
     // intro ani
     gsap.set('.loading .loading-thumb',{xPercent:1000})
+    gsap.set('.loading .loading-txt',{opacity:0})
     const introAni = gsap.timeline({})
     introAni.addLabel('a')
-    .to('.loading .loading-thumb',{xPercent:-10,duration:3},'a')
-    .from('.loading .loading-txt',{opacity:0,duration:1,delay:3},'a')
+    .to('.loading .loading-thumb',{xPercent:0,duration:3},'a')
+    .to('.loading .loading-txt',{opacity:1,duration:1,delay:3},'a')
     .to('.loading',{opacity:0,delay:5,duration:1,display:'none'},'a')
 
     ScrollTrigger.matchMedia({
@@ -16,7 +17,7 @@ $(function(){
         .from('.header',{opacity:0,duration:1.2},'b-=0.4')
         },
 
-          // laptop
+        // laptop
         "(max-width: 991px)": function() {
         /**
          * intro
