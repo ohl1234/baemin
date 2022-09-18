@@ -120,9 +120,9 @@ $(function(){
                 }
             })
             textMotion.addLabel('a')
-            .to('.sc-visual .txt1',{xPercent:50, duration:2, scrub:1},'a')
-            .to('.sc-visual .txt2',{ xPercent:-100, duration:2, scrub:1},'a')
-            .to('.sc-visual .txt3',{ xPercent:50, duration:2, scrub:1},'a')
+            .to('.sc-visual .txt1',{xPercent:50, duration:2},'a')
+            .to('.sc-visual .txt2',{ xPercent:-100, duration:2},'a')
+            .to('.sc-visual .txt3',{ xPercent:50, duration:2},'a')
             //line 추가
             .from('.sc-visual .line-ani1 .guage',{width:"0%",duration:2},'a-=0.1')
             .from('.sc-visual .line-ani2 .guage',{width:"0%",duration:2},'a+=0.3')
