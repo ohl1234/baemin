@@ -58,7 +58,7 @@
 }
 
 // responsive
-
+$smallPc:1135px;
 $laptop:991px;
 $tablet:767px;
 $mobile:479px;
@@ -77,6 +77,12 @@ $mobile:479px;
 
 @mixin laptop {
     @media (max-width:$laptop){
+        @content;
+    }
+}
+
+@mixin smallPc {
+    @media (max-width:$smallPc){
         @content;
     }
 }
