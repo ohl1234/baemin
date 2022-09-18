@@ -63,6 +63,7 @@ $(function(){
                     trigger:".sc-visual",
                     start:"top top",
                     end:"bottom top",
+                    scrub:1,
                     ease:'none'
                 },
                 yPercent:-70,
