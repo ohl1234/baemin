@@ -5,17 +5,17 @@ $(function(){
             /**
              * sc-visual
              */
-                         gsap.to('.sc-visual .thumb-area',{
-                            scrollTrigger:{
-                                trigger:".sc-visual",
-                                start:"top top",
-                                end:"bottom top",
-                                scrub:0,
-                                ease:'none'
-                            },
-                            yPercent:250,
-        
-                        }) 
+            gsap.to('.sc-visual .thumb-area',{
+                scrollTrigger:{
+                    trigger:".sc-visual",
+                    start:"top top",
+                    end:"bottom top",
+                    scrub:0,
+                    ease:'none'
+                },
+                yPercent:250,
+
+            }) 
              /**
              * sc-app
              */
@@ -25,7 +25,6 @@ $(function(){
                     start:"top bottom",
                     end:"bottom top",
                     scrub:1,
-                    //markers:true
                 }
             })
             appMotion.addLabel('a')
@@ -79,7 +78,6 @@ $(function(){
                     start:"top bottom",
                     end:"bottom top",
                     scrub:1,
-                    //markers:true
                 }
             })
             appMotion.addLabel('a')
@@ -115,33 +113,32 @@ $(function(){
              */
             textMotion = gsap.timeline({
                 scrollTrigger:{
-                    trigger:'.sc-visual .gradient-txt2',
-                    start:'top 80%',
+                    trigger:'.sc-visual .txt1',
+                    start:'top bottom',
                     end:'150% -100%',
                     scrub:1
                 }
             })
             textMotion.addLabel('a')
-            .to('.sc-visual .gradient-txt2',{xPercent:50, duration:2, scrub:1},'a')
-            .to('.sc-visual .gradient-txt3',{ xPercent:-100, duration:2, scrub:1},'a')
-            .to('.sc-visual .gradient-txt4',{ xPercent:50, duration:2, scrub:1},'a')
+            .to('.sc-visual .txt1',{xPercent:50, duration:2, scrub:1},'a')
+            .to('.sc-visual .txt2',{ xPercent:-100, duration:2, scrub:1},'a')
+            .to('.sc-visual .txt3',{ xPercent:50, duration:2, scrub:1},'a')
             //line 추가
-            .from('.sc-visual .gradient-line6 .guage',{width:"0%",duration:2},'a-=0.1')
-            .from('.sc-visual .gradient-line1 .guage',{width:"0%",duration:2},'a+=0.3')
-            .from('.sc-visual .gradient-line2 .guage',{width:"0%",duration:2},'a+=0.5')
-            .from('.sc-visual .gradient-line3 .guage',{width:"0%",duration:2},'a+=0.7')
-            .from('.sc-visual .gradient-line4 .guage',{width:"0%",duration:2},'a+=0.9')
+            .from('.sc-visual .line-ani1 .guage',{width:"0%",duration:2},'a-=0.1')
+            .from('.sc-visual .line-ani2 .guage',{width:"0%",duration:2},'a+=0.3')
+            .from('.sc-visual .line-ani3 .guage',{width:"0%",duration:2},'a+=0.5')
+            .from('.sc-visual .line-ani4 .guage',{width:"0%",duration:2},'a+=0.7')
+            .from('.sc-visual .line-ani5 .guage',{width:"0%",duration:2},'a+=0.9')
 
             /**
-             * sc-you
+             * sc-introduce
              */
-            gsap.set('.sc-you .sc-title',{yPercent:150})
-            gsap.to('.sc-you .sc-title',{
+            gsap.set('.sc-introduce .sc-title',{yPercent:150})
+            gsap.to('.sc-introduce .sc-title',{
                 scrollTrigger:{
-                    trigger:".sc-you .thumb-box",
+                    trigger:".sc-introduce .thumb-box",
                     start:'top 60%',
                     end:'bottom top',
-                    //markers:true,
                     scrub:1
                 },
                 yPercent:-150,
@@ -150,18 +147,18 @@ $(function(){
 
             lineMotion = gsap.timeline({
                 scrollTrigger:{
-                    trigger:'.sc-you .group-flex1',
-                    start:'top bottom',
+                    trigger:'.sc-introduce .group-flex1',
+                    start:'top top',
                     end:'150% -50%',
                     scrub:1
                 }
             })
             lineMotion.addLabel('a')
-            .from('.sc-you .gradient-line2 .guage',{width:"0%",duration:1},'a-=0.1')
-            .from('.sc-you .gradient-line1 .guage',{width:"0%",duration:1},'a+=0.2')
-            .from('.sc-you .gradient-line3 .guage',{width:"0%",duration:1},'a+=0.3')
-            .from('.sc-you .gradient-line5 .guage',{width:"0%",duration:1},'a+=0.4')
-            .from('.sc-you .gradient-line4 .guage',{width:"0%",duration:1},'a+=0.5')
+            .from('.sc-introduce .line-ani1 .guage',{width:"0%",duration:1},'a-=0.1')
+            .from('.sc-introduce .line-ani2 .guage',{width:"0%",duration:1},'a+=0.2')
+            .from('.sc-introduce .line-ani3 .guage',{width:"0%",duration:1},'a+=0.3')
+            .from('.sc-introduce .line-ani4 .guage',{width:"0%",duration:1},'a+=0.4')
+            .from('.sc-introduce .line-ani5 .guage',{width:"0%",duration:1},'a+=0.5')
 
             /**
              * sc-paragraph
@@ -174,7 +171,6 @@ $(function(){
                     end:'bottom top',
                     scrub:0,
                     ease:'none',
-                    //markers:true,
                     stagger:0.2
                 },
                 height:'100%',
@@ -187,7 +183,6 @@ $(function(){
                     end:'30% top',
                     scrub:0,
                     ease:'none',
-                    //markers:true,
                     stagger:0.2
                 },
                 height:'100%',
@@ -200,7 +195,6 @@ $(function(){
                     end:'20% top',
                     scrub:0,
                     ease:'none',
-                    //markers:true,
                     stagger:0.2
                 },
                 height:'100%',
@@ -213,7 +207,6 @@ $(function(){
                     end:'bottom top',
                     scrub:0,
                     ease:'none',
-                    //markers:true,
                     stagger:0.2
                 },
                 height:'100%',
@@ -236,19 +229,6 @@ $(function(){
                     },
                     width:'97%'
                 })
-            })
-            /**
-             * footer
-             */
-            $(window).scroll(function(){
-                curr = $(this).scrollTop();
-                const footerHere = $('.footer').offset().top; 
-
-                if(curr >= footerHere - 100){
-                    $('.header').css('opacity','0');
-                }else{
-                    $('.header').css('opacity','1');
-                }
             })
         }
     });

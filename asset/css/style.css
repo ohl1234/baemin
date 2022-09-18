@@ -263,46 +263,12 @@ input, select, button, fieldset {
   font-size: 7vw;
 }
 
-.gradient-txt1 {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+.color-txt1 {
+  color: #ffd40f;
 }
 
-.gradient-txt2 {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.gradient-txt3 {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.gradient-txt4 {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.gradient-txt5 {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.gradient-txt6 {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+.color-txt2 {
+  color: #2ac1bc;
 }
 
 @-webkit-keyframes rolling {
@@ -353,28 +319,7 @@ input, select, button, fieldset {
 .line.center {
   justify-content: center;
 }
-
-.gradient-line1 > * {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-}
-
-.gradient-line2 > * {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-}
-
-.gradient-line3 > * {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-}
-
-.gradient-line4 > * {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-}
-
-.gradient-line5 > * {
-  background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
-}
-
-.gradient-line6 > * {
+.line > * {
   background-image: linear-gradient(90deg, #b4eeeb, #ffffff);
 }
 
@@ -594,7 +539,7 @@ input, select, button, fieldset {
   letter-spacing: -0.7vh;
   color: #ffffff;
 }
-.sc-visual .txt-area strong.gradient-txt3 {
+.sc-visual .txt-area strong.txt2 {
   align-self: flex-end;
 }
 .sc-visual .thumb-area {
@@ -697,10 +642,10 @@ input, select, button, fieldset {
     line-height: 90px;
   }
 }
-.sc-you {
+.sc-introduce {
   width: 100vw;
 }
-.sc-you .group-flex1 {
+.sc-introduce .group-flex1 {
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -709,99 +654,97 @@ input, select, button, fieldset {
   background-size: 100%;
   background-attachment: fixed;
 }
-.sc-you .group-flex1 > * {
+.sc-introduce .group-flex1 > * {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.sc-you .group-flex1 .sc-title {
+.sc-introduce .group-flex1 .sc-title {
   text-align: center;
   z-index: 3;
   font-size: 10vw;
   white-space: nowrap;
 }
-.sc-you .group-flex1 .sc-title .txt-wrap {
+.sc-introduce .group-flex1 .sc-title .txt-wrap {
   display: block;
 }
-.sc-you .group-flex1 .thumb-box {
+.sc-introduce .group-flex1 .thumb-box {
   z-index: 2;
   width: 100%;
   height: 100%;
 }
-.sc-you .group-flex2 {
+.sc-introduce .group-flex2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5.5vh;
 }
-.sc-you .group-flex2 .you-desc {
+.sc-introduce .group-flex2 .intro-desc {
   color: rgba(255, 255, 255, 0.89);
-  font-size: 11vh;
-  line-height: 9vh;
-  font-weight: 500;
+  font-size: 7vw;
   letter-spacing: -0.13vh;
 }
 
 @media (max-width: 1135px) {
-  .sc-you .group-flex1 {
+  .sc-introduce .group-flex1 {
     background-size: cover;
   }
-  .sc-you .group-flex2 .you-desc {
+  .sc-introduce .group-flex2 .intro-desc {
     font-size: 6vw;
     line-height: 45px;
     letter-spacing: -1px;
   }
 }
 @media (max-width: 991px) {
-  .sc-you {
+  .sc-introduce {
     padding: 0;
   }
-  .sc-you .group-flex1 .sc-title {
+  .sc-introduce .group-flex1 .sc-title {
     font-size: 150px;
     line-height: 120px;
   }
-  .sc-you .group-flex2 {
+  .sc-introduce .group-flex2 {
     padding: 55px 34px;
     align-items: flex-start;
   }
-  .sc-you .group-flex2 .you-desc {
+  .sc-introduce .group-flex2 .intro-desc {
     font-size: 5vw;
     line-height: 1.3;
     letter-spacing: -1px;
   }
 }
 @media (max-width: 767px) {
-  .sc-you {
+  .sc-introduce {
     padding: 0;
   }
-  .sc-you .group-flex1 {
+  .sc-introduce .group-flex1 {
     height: 90vh;
   }
-  .sc-you .group-flex1 .sc-title {
+  .sc-introduce .group-flex1 .sc-title {
     font-size: 110px;
     line-height: 90px;
   }
-  .sc-you .group-flex2 .you-desc {
+  .sc-introduce .group-flex2 .intro-desc {
     font-size: 5vw;
     line-height: 1.3;
     letter-spacing: 0;
   }
 }
 @media (max-width: 479px) {
-  .sc-you .group-flex1 .sc-title {
+  .sc-introduce .group-flex1 .sc-title {
     font-size: 80px;
     line-height: 70px;
     letter-spacing: -1px;
   }
-  .sc-you .group-flex1 .thumb-box {
+  .sc-introduce .group-flex1 .thumb-box {
     width: 100%;
   }
-  .sc-you .group-flex2 {
+  .sc-introduce .group-flex2 {
     padding: 34px 21px;
   }
-  .sc-you .group-flex2 .you-desc {
+  .sc-introduce .group-flex2 .intro-desc {
     font-size: 7vw;
     line-height: 34px;
     letter-spacing: 0;
@@ -912,7 +855,7 @@ input, select, button, fieldset {
     width: 250px;
   }
   .sc-app .device-item.item1 .app-display {
-    width: 200px;
+    width: 210px;
     height: 460px;
     padding: 0;
   }
@@ -937,6 +880,11 @@ input, select, button, fieldset {
     width: 240px;
     height: 520px;
     padding-top: 0;
+  }
+  .sc-app .app-display {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
   }
 }
 .sc-paragraph {
@@ -1075,6 +1023,7 @@ input, select, button, fieldset {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 10px rgba(42, 193, 188, 0.2);
+  overflow: hidden;
 }
 .sc-feature .ic-logo img {
   width: 110%;
@@ -1224,13 +1173,13 @@ input, select, button, fieldset {
   .sc-feature .ic-logo {
     width: 90px;
     height: 90px;
-    background-color: #ffffff;
   }
   .sc-feature .ic-logo img {
     width: 100%;
   }
   .sc-feature .txt-box {
     margin-left: 4vw;
+    width: 46vw;
   }
   .sc-feature .feature-tit {
     padding-bottom: 12px;
@@ -1262,14 +1211,26 @@ input, select, button, fieldset {
   }
 }
 @media (max-width: 479px) {
+  .sc-feature .feature-card {
+    padding: 15vw 12vw;
+  }
   .sc-feature .txt-box {
     margin-left: 5vw;
+    width: 60vw;
+  }
+  .sc-feature .ic-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+  }
+  .sc-feature .ic-logo img {
+    width: 100%;
   }
   .sc-feature .feature-tit {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .sc-feature .feature-txt {
-    font-size: 2.5vw;
+    font-size: 3.2vw;
   }
   .sc-feature .bar-box {
     position: absolute;

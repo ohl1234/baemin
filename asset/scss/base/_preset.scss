@@ -28,29 +28,11 @@
     }
 }
 
-.gradient-txt1 {
-    @include gradi-Blue1;
-    @include clip-Text;
+.color-txt1 {
+    color: $color-yellow;
 }
-.gradient-txt2 {
-    @include gradi-Blue2;
-    @include clip-Text;
-}
-.gradient-txt3 {
-    @include gradi-Pink;
-    @include clip-Text;
-}
-.gradient-txt4 {
-    @include gradi-Yellow;
-    @include clip-Text;
-}
-.gradient-txt5 {
-    @include gradi-Purple;
-    @include clip-Text;
-}
-.gradient-txt6 {
-    @include gradi-Green;
-    @include clip-Text;
+.color-txt2 {
+    color: $color-mint;
 }
 
 @keyframes rolling {
