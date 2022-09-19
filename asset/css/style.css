@@ -518,7 +518,7 @@ input, select, button, fieldset {
 .sc-visual .txt-area .sc-title .tit-msg {
   display: inline-block;
   font-size: 30vh;
-  letter-spacing: -10px;
+  letter-spacing: -17px;
 }
 .sc-visual .txt-area .sc-title .tit-msg:nth-of-type(3) {
   vertical-align: -12px;
