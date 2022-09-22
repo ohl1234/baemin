@@ -650,7 +650,7 @@ input, select, button, fieldset {
   overflow: hidden;
   background-image: url(../images/food.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 .sc-introduce .group-flex1 > * {
@@ -682,9 +682,6 @@ input, select, button, fieldset {
 }
 
 @media (max-width: 1135px) {
-  .sc-introduce .group-flex1 {
-    background-size: cover;
-  }
   .sc-introduce .group-flex2 .intro-desc {
     font-size: 6vw;
     line-height: 45px;

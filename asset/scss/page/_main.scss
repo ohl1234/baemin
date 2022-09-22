@@ -178,7 +178,7 @@
         overflow: hidden;
         background-image: url(../images/food.jpg);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         background-attachment: fixed;
         & > * {
             @include position-Center;
@@ -210,9 +210,6 @@
 // sc-introduce responsive start
 @include smallPc {
     .sc-introduce {
-        .group-flex1 {
-            background-size: cover;
-        }
         .group-flex2 {
             .intro-desc{
                 font-size: 6vw;
